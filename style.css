@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+ul{
+    list-style: none;
+    padding: .8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+li{
+    display: inline;
+    font-family: inherit;
+}
+
+.price{
+    font-family: "Fraunces", sans-serif;
+    color: hsl(158, 36%, 37%);
+    font-size: xx-large;
+}
+.desc{
+    padding-left: .7rem;
+    font-size: small;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+h1{
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 21%, 14%);
+    text-align: left;
+    padding: .5rem .8rem;
+    font-size: xx-large;
+}
+h2{
+    text-transform: uppercase;
+    font-size: .6rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    padding: .5rem .8rem 0;
+    letter-spacing: 4px;
+}
+p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7;
+    padding: .5rem .8rem;
+}
+img{
+    max-width: 100%;
+    border-radius: .8rem .8rem 0 0;
+}
+article:last-child{
+    border-radius: 0 0 .8rem .8rem;
+}
+
+.container, article:last-child{
+    background-color: #fff;
+    border-radius: .8rem;
+}
+.container{
+    max-width: 600px;
+}
+.btn-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+button{
+    width: 90%;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: hsl(158, 36%, 37%);
+    border: solid 1px hsl(158, 36%, 37%);
+    color: #fff;
+    font-size: medium;
+}
+.icon{
+    margin: 0 .5rem;
+}
+button:focus{
+    background-color: hsl(156, 43%, 16%);
+    border: solid 1px hsl(156, 43%, 16%);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    max-width: 327px;
+    min-width: 327px;
+    padding-top: 1rem;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 640px){
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .container, article:last-child{
+        background-color: #fff;
+        border-radius: .8rem;
+    }
+    img{
+        max-width: 100%;
+        border-radius: .8rem 0 0 .8rem;
+    }
+    button:hover{
+        background-color: hsl(156, 43%, 16%);
+        border: solid 1px hsl(156, 43%, 16%);
+    }
+}
